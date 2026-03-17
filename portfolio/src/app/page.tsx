@@ -27,8 +27,6 @@ export default function Home() {
         {/* projects */}
         <Projects />
 
-        <Carousel />
-
         {/* footer */}
         <Footer />
    

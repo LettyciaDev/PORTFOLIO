@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --bg-color: #ffffff;
+  --text-color: #FF7D20;
+
+  --container-color: linear-gradient(
+    to bottom,
+    #FF7D20 20%,
+    #FFAE00 50%,
+    #FF883D 100%
+  );
+}
+
+:root[data-theme='dark'] {
+  --bg-color: #1E1E1E;
+  --text-color: #04CD6F;
+
+  --container-color: linear-gradient(
+    to bottom,
+    #048B4C 20%,
+    #5DFF93 50%,
+    #048B4C 100%
+  );
 }

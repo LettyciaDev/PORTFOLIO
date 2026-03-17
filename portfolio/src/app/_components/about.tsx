@@ -13,7 +13,7 @@ export function About() {
               <p> pessoa, estudante e profissional </p>
             </div>
 
-            <div className="w-full h-full bg-[linear-gradient(to_bottom,#FF7D20_20%,#FFAE00_50%,#FF883D_100%)] flex justify-center">
+            <div   style={{ background: "var(--container-color" }} className="w-full h-full flex justify-center">
                     <Diagram/>
             </div>
 
