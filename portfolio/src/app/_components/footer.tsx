@@ -1,6 +1,6 @@
 export function Footer() {
     return (
-        <div className="w-full h-auto relative pt-20 pb-10 overflow-hidden bg-linear-to-t from-orange-600 to-orange-400 text-amber-50">
+        <div style={{ background: "var(--container-color" }} className="w-full h-auto relative pt-20 pb-10 overflow-hidden text-amber-50">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
                         

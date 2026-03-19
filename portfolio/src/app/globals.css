@@ -4,22 +4,28 @@
   --bg-color: #ffffff;
   --text-color: #FF7D20;
 
-  --container-color: linear-gradient(
-    to bottom,
-    #FF7D20 20%,
-    #FFAE00 50%,
-    #FF883D 100%
-  );
+ --container-color: linear-gradient(
+  160deg,
+  #ffb347 0%,
+  #FF7D20 35%,
+  #e65c00 65%,
+  #b34700 100%
+);
+
+  --bg-second:#F3F3FF;
 }
 
 :root[data-theme='dark'] {
   --bg-color: #1E1E1E;
   --text-color: #04CD6F;
 
-  --container-color: linear-gradient(
-    to bottom,
-    #048B4C 20%,
-    #5DFF93 50%,
-    #048B4C 100%
-  );
+--container-color: linear-gradient(
+  160deg,
+  #0bbf6b 0%,
+  #048B4C 35%,
+  #035c2e 65%,
+  #021f0d 100%
+);
+
+  --bg-second:#424242;
 }

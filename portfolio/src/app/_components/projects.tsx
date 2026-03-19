@@ -7,7 +7,7 @@ export function Projects() {
             <h1 className="font-bold text-4xl drop-shadow-md">PROJETOS</h1>
           </div>
 
-          <div className="w-full h-[60vh] bg-[#F2F2F2] flex flex-col justify-center items-center">
+          <div style={{ background: "var(--bg-second )" }} className="w-full h-[60vh] flex flex-col justify-center items-center">
 
               <Carousel/> 
 
