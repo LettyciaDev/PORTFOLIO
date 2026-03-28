@@ -72,7 +72,7 @@ export default function HangmanGame(){
         return palavra.split("").map((l,i)=>(
 
         <span key={i}
-        className="text-4xl md:text-5xl text-amber-800 tracking-widest"
+        className="text-4xl md:text-5xl text-[var-(--bg-color)] tracking-widest"
         >
         {letrasUsadas.includes(l) ? l : "_"}
         </span>
@@ -87,7 +87,7 @@ export default function HangmanGame(){
 
     return(
 
-        <div className="min-h-screen bg-linear-to-t from-orange-600 to-orange-400 text-white p-8 font-[Press_Start_2P]">
+        <div className="min-h-screen text-white p-8 font-[Press_Start_2P]" style={{ background: "var(--container-color" }}>
             <Link href="/">Voltar</Link>
             <div className="flex flex-col items-center justify-center">
                     <h1 className="text-xl font-extrabold md:text-2xl mb-8">
@@ -157,18 +157,14 @@ export default function HangmanGame(){
 
                                 <button
                                     key={l}
-                                    onClick={()=>tentarLetra(l)}
+                                    onClick={() => tentarLetra(l)}
                                     disabled={usada || status !== "jogando"}
+                                    style={!usada ? { background: "var(--container-color)" } : {}}
                                     className={`
-                                    px-3 py-2 rounded text-sm
-                                    transition
-                                    ${usada
-                                    ? correta
-                                    ? "bg-green-500"
-                                    : "bg-red-500"
-                                    : "bg-orange-400 hover:bg-orange-500"}
+                                        px-3 py-2 rounded text-sm transition
+                                        ${usada ? (correta ? "bg-green-500" : "bg-red-500") : ""}
                                     `}
-                                >
+                                    >
                                     {l}
                                 </button>
 
@@ -182,7 +178,7 @@ export default function HangmanGame(){
 
                         <div className="mt-6 text-center">
 
-                        <p className="text-amber-700 text-sm mb-2">
+                        <p className="text-[var-(--bg-color)] text-sm mb-2">
                         Letras usadas
                         </p>
 
@@ -207,7 +203,7 @@ export default function HangmanGame(){
                         )}
 
                         <button onClick={iniciarJogo}
-                        className="mt-8 w-full bg-white font-bold text-amber-700 py-3 rounded-lg hover:bg-yellow-300"
+                        className="mt-8 w-full bg-gray-700 font-bold text-[var-(--bg-color)] py-3 rounded-lg hover:bg-yellow-300"
                         >
                             REINICIAR
                         </button>
