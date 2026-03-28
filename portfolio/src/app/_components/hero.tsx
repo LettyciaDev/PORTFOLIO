@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero() {
      return (
-      <div className="relative flex flex-col items-center mb-[10vh]">
+      <div className="relative flex flex-col justify-center items-center mb-[10vh]">
 
 
   <div className="absolute w-40 h-16 bottom-8 left-[5%] shadow-lg rounded-lg flex flex-col justify-center
@@ -31,7 +31,6 @@ export function Hero() {
      backdrop-blur-md border border-white/10
     hover:scale-[1.01] transition-all duration-300">
 
-    {/* HEADER */}
     <div className="w-full border-b border-gray-700">
       <div className="flex justify-between items-center mt-3 ml-4 mr-3">
         <ul className="flex gap-2">
@@ -44,7 +43,6 @@ export function Hero() {
       </div>
     </div>
 
-    {/* CONTEÚDO */}
     <div className="w-full flex flex-col items-center justify-center mt-10 mb-10 text-sm md:text-lg font-mono text-green-400">
 
       <p className="w-3/4 leading-relaxed">
@@ -60,7 +58,7 @@ export function Hero() {
         <span className="text-orange-400">&lt;h2&gt;</span> 
         Te convido a conhecer minha jornada na 
         <span className="text-pink-500"> &lt;span&gt; </span> 
-        <span className="text-lime-400">programação</span> 
+        <span className="text-lime-400">Computação</span> 
         <span className="text-pink-500"> &lt;/span&gt; </span> 
         <span className="text-orange-400">&lt;/h2&gt;</span>
       </p>

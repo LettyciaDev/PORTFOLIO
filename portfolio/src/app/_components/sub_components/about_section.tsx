@@ -30,7 +30,6 @@ export function Diagram() {
 
     return (
         <div className="w-full max-w-6xl mx-auto px-4 mt-20 mb-20">
-      {/* Container Grid Responsivo */}
       <div className="grid gap-12 justify-items-center items-start text-amber-50 md:grid-cols-3">
         
         {classes.map((clas, index) => (

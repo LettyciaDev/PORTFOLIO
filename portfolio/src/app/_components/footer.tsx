@@ -4,7 +4,7 @@ export function Footer() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
                         
-                        {/* Coluna 1: Branding & Slogan */}
+                     
                         <div className="flex flex-col space-y-4 text-center md:text-left">
                             <h2 className="text-3xl font-bold bg-linear-to-r from-white to-amber-100 bg-clip-text text-transparent drop-shadow-sm">
                                 Lettycia.Portfólio
@@ -16,7 +16,7 @@ export function Footer() {
                         </div>
 
                         
-                        {/* Coluna 3: Links Rápidos ou Newsletter */}
+              
                         <div className="text-center md:text-right">
                             <h3 className="font-semibold mb-4">Quick Links</h3>
                             <ul className="space-y-2 text-sm">

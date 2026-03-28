@@ -14,7 +14,7 @@ const slides = [
     title: "CardapIA",
     description: "Site que gera receitas saudáveis com IA",
     image: "/cyber.png",
-    git: "https://github.com/LettyciaDev/PATAS-NA-RUA",
+    git: "https://github.com/LettyciaDev/PROJETO-WEB-MOBILE",
   },
 
   {
@@ -110,7 +110,7 @@ export function Carousel() {
 
                     {/* Conteúdo do Texto */}
                     <div className="p-6 sm:p-8 z-20 relative">
-                      <h2 className="text-xl font-bold uppercase tracking-tighter drop-shadow-lg text-white">
+                      <h2 className="text-xl font-bold uppercase drop-shadow-lg text-white">
                         {slide.title}
                       </h2>
                       <p className="mt-2 text-xs opacity-90 line-clamp-2 drop-shadow-sm text-gray-100">
@@ -120,8 +120,6 @@ export function Carousel() {
                       <div className="mt-4 flex items-center gap-3">
                         <a 
                           href={slide.git} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
                           className="bg-white/20 hover:bg-white/40 backdrop-blur-md px-3 py-1.5 rounded-lg text-xs font-semibold transition-all border border-white/10"
                         >
                           GitHub
@@ -147,7 +145,10 @@ export function Carousel() {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`h-2 rounded-full transition-all ${current === i ? "w-8 bg-orange-600" : "w-2 bg-gray-400"}`}
+            className={`h-2 rounded-full transition-all ${
+              current === i ? "w-8" : "w-2 bg-gray-400"
+            }`}
+            style={current === i ? { background: "var(--container-color)" } : {}}
           />
         ))}
       </div>
