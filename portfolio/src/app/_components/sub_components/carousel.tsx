@@ -13,7 +13,7 @@ const slides = [
   {
     title: "CardapIA",
     description: "Site que gera receitas saudáveis com IA",
-    image: "/cyber.png",
+    image: "/cardapia.png",
     git: "https://github.com/LettyciaDev/PROJETO-WEB-MOBILE",
   },
 
@@ -60,7 +60,6 @@ export function Carousel() {
   }, [])
 
   const nextSlide = () => {
-    // Garante que não passamos do limite de cards existentes
     setCurrent((prev) => (prev + 1 >= slides.length - (itemsToShow - 1) ? 0 : prev + 1))
   }
 
@@ -96,19 +95,17 @@ export function Carousel() {
               {/* Corpo do Card */}
               <div className="relative h-[85%] w-full rounded-[25px] shadow-2xl flex flex-col justify-end text-white border border-white/10 overflow-hidden backdrop-blur-md"> 
                     
-                    {/* Imagem configurada para ENCAIXAR (contain) */}
                     <Image 
                       src={slide.image} 
                       alt={slide.title}
-                      fill // No Next.js, usar 'fill' com 'object-contain' é a forma mais segura
+                      fill 
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      className="absolute inset-0 w-full h-full object-contain object-center z-0 p-4" // 'p-4' dá um respiro para a imagem não tocar nas bordas
+                      className="absolute inset-0 w-full h-full object-contain object-center z-0 p-4" 
                     />
 
-                    {/* Overlay de gradiente ajustado para não cobrir a imagem centralizada caso ela seja pequena */}
                     <div className="absolute inset-0 bg-linear-to-t from-gray-500 via-black/20 to-transparent z-10 pointer-events-none"></div>
 
-                    {/* Conteúdo do Texto */}
+              
                     <div className="p-6 sm:p-8 z-20 relative">
                       <h2 className="text-xl font-bold uppercase drop-shadow-lg text-white">
                         {slide.title}

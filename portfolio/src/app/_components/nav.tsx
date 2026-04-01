@@ -26,11 +26,10 @@ export function Nav(){
 
     return (
        <div className="flex justify-between items-center m-10 relative">
-      {/* Botão de Tema */}
       <button 
         onClick={toggleTheme}
         className="p-2 rounded-full border-2 transition-colors duration-300 z-50"
-        style={{ borderColor: 'var(--accent-color)' }}
+        
       >
         {theme === 'light' ? (
           <Moon size={24} color="#333" />
@@ -62,7 +61,7 @@ export function Nav(){
           <li className="cursor-pointer hover:text-green-500 transition-colors">PROJECTS</li>
           
           {/* Botão GAME */}
-          <li className="flex items-center gap-1 bg-(--box-color) font-bold text-amber-50 py-2 px-4 rounded-2xl hover:scale-105 transition-transform">
+          <li style={{ background: "var(--text-color)" }} className="flex items-center gap-1 font-bold text-amber-50 py-2 px-4 rounded-2xl hover:scale-105 transition-transform">
             <Image src="/game.png" alt="controle remoto" width={20} height={20} />
             <Link href="/hangman">GAME</Link>
           </li>

@@ -13,6 +13,7 @@
 );
 
   --bg-second:#F3F3FF;
+  --mask-gradient: linear-gradient(to top, var(--bg-color) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
 }
 
 :root[data-theme='dark'] {
@@ -30,4 +31,19 @@
   --project: #0f172a;
 
   --bg-second:#424242;
+  --mask-gradient: linear-gradient(to top, var(--bg-color) 0%, rgba(30, 30, 30, 0.8) 50%, transparent 100%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
 }

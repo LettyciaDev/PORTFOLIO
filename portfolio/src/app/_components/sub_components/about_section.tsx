@@ -1,32 +1,31 @@
 export function Diagram() {
     const classes = [
-            {
-              class: "Pessoa", 
-              atr1: "+ nome: Lettycia Vitória", 
-              atr2: "+ idade: 19",
-              atr3: "+ apelido: Lele",
-              method: "+ descricao(): Me chamo Lettycia Vitória, entusiata da tecnologia e sempre disponível a aprender algo novo",
-            }, 
+      {
+        class: "Pessoa",
+        atr1: "+ nome: Lettycia Vitória",
+        atr2: "+ idade: 19",
+        atr3: "+ apelido: Letty",
+        method: "+ descricao(): Entusiasta da tecnologia movida por curiosidade intelectual e resiliente na resolução de problemas."
+      },
 
-            {
-              class: "Estudante", 
-              atr1: "+ curso: Ciência da Computação", 
-              atr2: "+ período: 5º",
-              atr3: "+ instituição: Unicap",
-              method: "+ descricao():  Atualmente, aprendendo conceitos mais completos para o desenvolvimento de uma aplicação."
-            },
+      {
+        class: "Estudante",
+        atr1: "+ curso: Ciência da Computação",
+        atr2: "+ período: 5º",
+        atr3: "+ instituição: Unicap",
+        method: "+ descricao(): Focada em Análise de Algoritmos e Redes de Computadores, explorando a integração de IA e práticas modernas de Desenvolvimento Web."
+      },
 
-            {
-              class: "Dev-backend", 
-              atr1: "+ linguagens: Java, C, Python", 
-              atr2: "+ cargo: Estagiária",
-              atr3: "+ empresa: Lunio",
-              method: "+ descricao(): Atualmente atuo como estagiária na área de desenvolvimento backend"
-            }
-       ]
+      {
+        class: "Dev-backend",
+        atr1: "+ linguagens: Java, C, Python",
+        atr2: "+ cargo: Estagiária",
+        atr3: "+ empresa: Lunio",
+        method: "+ descricao(): Atuando no ciclo de vida de APIs, focada em otimização de performance e integridade de dados no ecossistema backend."
+      }
+    ]
     
-    const boxAtr = "w-[25vh] h-[28vh] bg-[#F8F8F875] rounded-4xl shadow-md";
-    const boxTitle = "h-[3vh] border-b-2 border-be-amber-50 text-center";
+    
 
     return (
         <div className="w-full max-w-6xl mx-auto px-4 mt-20 mb-20">

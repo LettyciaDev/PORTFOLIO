@@ -68,6 +68,28 @@ export function Hero() {
 
     </div>
   </div>
+
+ <div className="absolute -bottom-16 z-20 w-2/3 md:w-1/2 h-1/4 rounded-b-xl overflow-hidden">
+         <div style={{ background: "var(--mask-gradient" }} className="w-full h-full">
+        </div>
+  </div>
+
+ <div className="absolute -bottom-16 right-0 left-0 w-auto h-auto mx-auto z-18 flex justify-center group max-w-sm">
+    
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all duration-500"></div>
+    
+    <div className="relative overflow-hidden">
+      <Image 
+        src="/profile.png" 
+        alt="Profile" 
+        width={380} 
+        height={380} 
+        className="drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] transition-transform duration-700 group-hover:scale-[1.03]"
+        priority 
+      />
+  
+    </div>
+  </div>
 </div>
      );
 
