@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import { Menu, X } from 'lucide-react';
 import { Sun, Moon } from 'lucide-react'; // Biblioteca de ícones (npm install lucide-react)
 
-
-
 export function Nav(){
      const [isOpen, setIsOpen] = useState(false);
      const [theme, setTheme] = useState('light');
