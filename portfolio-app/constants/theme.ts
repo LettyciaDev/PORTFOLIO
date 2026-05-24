@@ -1,7 +1,7 @@
 export const Colors = {
   background: "#1E1E1E",
   surface: "#292a29",
-  surfaceAlt: "#1c1c30",
+  surfaceAlt: "#2e2e4e",
   border: "#2a2a45",
   borderLight: "#3a3a5c",
 
