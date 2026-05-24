@@ -37,35 +37,13 @@ const TimelineItem = ({
   </View>
 );
 
-const SubjectCard = ({
-  name,
-  status,
-}: {
-  name: string;
-  status: "cursando" | "concluída";
-}) => (
-  <View
-    style={[styles.subjectCard, status === "cursando" && styles.subjectActive]}
-  >
-    <Ionicons
-      name={
-        status === "cursando"
-          ? "radio-button-on-outline"
-          : "checkmark-circle-outline"
-      }
-      size={14}
-      color={status === "cursando" ? Colors.cyan : Colors.green}
-    />
-    <Text
-      style={[
-        styles.subjectName,
-        status === "cursando" && { color: Colors.textPrimary },
-      ]}
-    >
-      {name}
-    </Text>
-  </View>
-);
+const SubjectCard = ({ name }: { name: string }) => {
+  return (
+    <View style={styles.subjectCard}>
+      <Text style={styles.subjectName}>{name}</Text>
+    </View>
+  );
+};
 
 export default function AcademicoScreen() {
   return (
@@ -74,9 +52,8 @@ export default function AcademicoScreen() {
       contentContainerStyle={styles.content}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.pageTitle}>Experiência{"\n"}Acadêmica</Text>
+      <Text style={styles.pageTitle}>Experiência Acadêmica</Text>
 
-      {/* Degree card */}
       <View style={styles.degreeCard}>
         <View style={styles.degreeInfo}>
           <Text style={styles.degreeName}>Ciência da Computação</Text>
@@ -92,7 +69,6 @@ export default function AcademicoScreen() {
         </View>
       </View>
 
-      {/* Timeline */}
       <Text style={styles.sectionLabel}>Linha do Tempo</Text>
 
       <TimelineItem
@@ -109,22 +85,18 @@ export default function AcademicoScreen() {
         isLast
       />
 
-      {/* Current semester */}
       <Text style={styles.sectionLabel}>Disciplinas em Foco</Text>
       <View style={styles.subjectsGrid}>
         {[
-          { name: "Análise de Algoritmos", status: "cursando" as const },
-          { name: "Redes de Computadores", status: "cursando" as const },
-          { name: "Teste de Software", status: "cursando" as const },
-          { name: "IA e Machine Learning", status: "cursando" as const },
-          { name: "Projeto Integrador", status: "cursando" as const },
-          {
-            name: "Ciência das Redes",
-            status: "cursando" as const,
-          },
-          { name: "Programação Web e Mobile", status: "cursando" as const },
-        ].map((s) => (
-          <SubjectCard key={s.name} name={s.name} status={s.status} />
+          "Análise de Algoritmos",
+          "Redes de Computadores",
+          "Teste de Software",
+          "IA e Machine Learning",
+          "Projeto Integrador",
+          "Ciência das Redes",
+          "Programação Web e Mobile",
+        ].map((name) => (
+          <SubjectCard key={name} name={name} />
         ))}
       </View>
     </ScrollView>

@@ -61,8 +61,6 @@ export default function HomeScreen() {
         <Text style={styles.bioBadge}>Desenvolvedora Full-stack</Text>
 
         <Text style={styles.bioDesc}>
-          Entusiasta da tecnologia movida por curiosidade intelectual.
-          {"\n"}
           Estagiária Backend · Unicap · 5º período
         </Text>
 
@@ -96,6 +94,8 @@ export default function HomeScreen() {
           {
             label: "Projetos",
             value: "6+",
+            borderWidth: 1,
+            borderColor: Colors.accent + "44",
             color: Colors.accent,
           },
           {
@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
   statValue: {
     fontFamily: "Poppins",
     fontSize: 24,
-    fontWeight: "700",
+    fontWeight: "500",
   },
 
   statLabel: {
