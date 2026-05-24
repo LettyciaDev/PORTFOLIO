@@ -22,7 +22,7 @@ export const Colors = {
   greenDim: "#0f3020",
 
   textPrimary: "#04CD6F",
-  textSecondary: "#9090b8",
+  textSecondary: "#FFFF",
   textMuted: "#5a5a80",
 
   white: "#ffffff",

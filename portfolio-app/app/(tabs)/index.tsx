@@ -40,7 +40,7 @@ export default function HomeScreen() {
       showsVerticalScrollIndicator={false}
     >
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>lettycia.dev</Text>
+        <Text style={styles.headerTitle}>Lettycia.dev</Text>
       </View>
 
       <View style={styles.bioCard}>
