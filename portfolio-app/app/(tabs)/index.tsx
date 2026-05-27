@@ -5,34 +5,13 @@ import {
   ScrollView,
   TouchableOpacity,
   Linking,
-  Animated,
   Image,
 } from "react-native";
-import { useEffect, useRef } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
 import { Colors, Spacing, Radius } from "@/constants/theme";
 
 export default function HomeScreen() {
-  const cursorOpacity = useRef(new Animated.Value(1)).current;
-
-  useEffect(() => {
-    Animated.loop(
-      Animated.sequence([
-        Animated.timing(cursorOpacity, {
-          toValue: 0,
-          duration: 500,
-          useNativeDriver: true,
-        }),
-        Animated.timing(cursorOpacity, {
-          toValue: 1,
-          duration: 500,
-          useNativeDriver: true,
-        }),
-      ]),
-    ).start();
-  }, []);
-
   return (
     <ScrollView
       style={styles.container}

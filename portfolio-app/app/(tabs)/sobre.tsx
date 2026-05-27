@@ -88,10 +88,6 @@ export default function SobreScreen() {
           color: Colors.pink,
         },
         {
-          name: "Animated API",
-          color: Colors.green,
-        },
-        {
           name: "@expo/vector-icons",
           color: Colors.cyan,
         },

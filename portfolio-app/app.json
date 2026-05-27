@@ -2,6 +2,7 @@
   "expo": {
     "name": "Lettycia.dev",
     "slug": "lettycia-portfolio",
+    "owner": "projeto-web",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -31,6 +32,20 @@
     "plugins": ["expo-router", "expo-font"],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c96de487-dea9-4328-8e00-4dae6873a519"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c96de487-dea9-4328-8e00-4dae6873a519"
     }
   }
 }
