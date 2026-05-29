@@ -210,7 +210,8 @@ const styles = StyleSheet.create({
   },
 
   statCard: {
-    flex: 1,
+    flexGrow: 1,
+    minWidth: 100,
     backgroundColor: Colors.surface,
     borderRadius: Radius.lg,
     borderWidth: 1,
