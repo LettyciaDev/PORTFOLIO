@@ -33,7 +33,7 @@ export default function SobreScreen() {
           color: Colors.cyan,
         },
         {
-          name: "Expo SDK 52",
+          name: "Expo SDK 54",
           color: Colors.accentLight,
         },
         {
